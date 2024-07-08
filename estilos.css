@@ -1,0 +1,288 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+  background-color: #198754;
+  padding: 1.2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+}
+#logo {
+  background-image: url("./images/logo.png");
+  width: 96px;
+  height: 80px;
+  text-indent: -1000px;
+  overflow: hidden;
+}
+#logo a {
+  display: block;
+  height: 80px;
+}
+
+nav ul li {
+  display: inline-block;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  text-align: center;
+}
+nav a:hover {
+  color: rgb(186, 125, 2);
+}
+
+#banner {
+  background: url(./images/Zapatero\ mobile.jpg);
+  background-size: cover;
+  height: 50vh;
+  padding: 2em;
+  display: flex;
+  align-items: center;
+}
+#banner h2 {
+  font-size: 3rem;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+#trabajos {
+  text-align: center;
+  padding: 1em;
+  background-color: #198754;
+}
+
+#trabajos div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  max-width: 1900px;
+  margin: auto;
+}
+
+#trabajos h2 {
+  font-size: 2.5em;
+  margin: 0.5em 0;
+  color: white;
+}
+
+#trabajos figure {
+  border: 3px solid black;
+  padding: 1em;
+  flex-basis: 100%;
+  border-radius: 15px;
+  box-shadow: 2px 3px 7px 1px rgba(0, 0, 0, 0.4);
+  background-color: rgb(216, 178, 88);
+  color: white;
+}
+
+#trabajos img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 20px;
+}
+
+#nosotros {
+  padding: 1em;
+  text-align: center;
+  background-color: #198754;
+}
+
+#nosotros h2 {
+  text-align: center;
+  padding: 1em;
+  font-size: 2.5em;
+  color: white;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 3px solid black;
+  padding: 1em;
+  flex-basis: 100%;
+  border-radius: 15px;
+  box-shadow: 2px 3px 7px 1px rgba(0, 0, 0, 0.4);
+}
+#container img {
+  width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+#texto {
+  width: 100%;
+  text-align: left;
+}
+
+#texto p {
+  margin: 10px;
+  font-size: 18px;
+  color: white;
+}
+
+#reseñas {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-color: #198754;
+}
+
+#reseñas div {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+}
+
+#reseñas h2 {
+  font-size: 2.5em;
+  text-align: center;
+  margin: 0.5em 0;
+  color: white;
+}
+#reseñas h3 {
+  color: brown;
+  font-size: 1.5em;
+  padding: 15px;
+}
+
+#reseñas figure {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  border: 3px solid black;
+  padding: 1.5em;
+  border-radius: 20px;
+  background-color: rgb(216, 178, 88);
+  color: white;
+}
+
+#reseñas img {
+  width: 20vh;
+  height: auto;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+#reseñas p {
+  padding: 10px;
+}
+
+footer {
+  background-color: #198754;
+  padding: 1.5em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1em;
+  color: white;
+  box-shadow: 2px 3px 7px 1px rgba(0, 0, 0, 0.4);
+}
+
+footer ul li {
+  display: inline-block;
+}
+footer ul li a {
+  text-decoration: none;
+  display: block;
+  width: 100px;
+  text-align: center;
+}
+
+@media screen and (min-width: 800px) {
+  header {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #banner {
+    background: url(./images/Zapatero.jpg);
+    background-size: cover;
+  }
+  #banner h2 {
+    font-size: 4rem;
+  }
+
+  #trabajos figure {
+    flex-basis: 40%;
+  }
+  #texto p {
+    font-size: 22px;
+  }
+
+  #reseñas figure {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  #reseñas img {
+    width: 16vh;
+    height: auto;
+  }
+  #reseñas figcaption {
+    height: 12vh;
+    margin: 0px 8px;
+  }
+
+  footer {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #trabajos div {
+    flex-wrap: nowrap;
+    flex-basis: auto;
+  }
+  #container {
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+  }
+  #texto p {
+    font-size: 18px;
+  }
+
+  #reseñas h3 {
+    font-size: 1.7em;
+  }
+  #reseñas p {
+    font-size: 1.4em;
+  }
+}
+
+@media screen and (min-width: 1800px) {
+  #texto {
+    padding: 10px;
+  }
+
+  #texto p {
+    font-size: 27px;
+    margin: 20px;
+    padding: 1px;
+  }
+  #reseñas div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  #reseñas figure {
+    height: auto;
+    max-height: 40vh;
+  }
+  #reseñas img {
+    width: 26vh;
+    height: auto;
+  }
+}
